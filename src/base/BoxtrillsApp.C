@@ -13,10 +13,9 @@ InputParameters validParams<BoxtrillsApp>()
   return params;
 }
 
-BoxtrillsApp::BoxtrillsApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+BoxtrillsApp::BoxtrillsApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);

@@ -11,7 +11,7 @@ InputParameters validParams<BoxtrillsApp>();
 class BoxtrillsApp : public MooseApp
 {
 public:
-  BoxtrillsApp(const std::string & name, InputParameters parameters);
+  BoxtrillsApp(InputParameters parameters);
   virtual ~BoxtrillsApp();
 
   static void registerApps();
